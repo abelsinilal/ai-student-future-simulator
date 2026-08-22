@@ -34,6 +34,7 @@ interface StudentProfileFormProps {
   onChange: (profile: StudentProfile) => void;
   onSubmit: () => void;
   onReset: () => void;
+  onNextStep?: () => void;
 }
 
 export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
@@ -41,6 +42,7 @@ export const StudentProfileForm: React.FC<StudentProfileFormProps> = ({
   onChange,
   onSubmit,
   onReset,
+  onNextStep,
 }) => {
   const [customSkillInput, setCustomSkillInput] = useState('');
   const [showSkillInput, setShowSkillInput] = useState(false);

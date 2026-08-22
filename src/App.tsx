@@ -117,6 +117,7 @@ export default function App() {
           <FutureSimulationPlaceholder
             profile={profile}
             onBackToProfile={() => handleStepNavigation('profile')}
+            onNextStep={() => handleStepNavigation('future')}
           />
         )}
       </main>

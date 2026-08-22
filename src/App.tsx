@@ -110,6 +110,7 @@ export default function App() {
             onChange={handleProfileChange}
             onSubmit={handleGenerateFuture}
             onReset={handleReset}
+            onNextStep={() => handleStepNavigation('simulation')}
           />
         )}
 

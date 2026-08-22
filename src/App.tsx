@@ -121,6 +121,13 @@ export default function App() {
             onNextStep={() => handleStepNavigation('future')}
           />
         )}
+        {currentStep === 'future' && (
+          <FutureSimulationPlaceholder
+            profile={profile}
+            onBackToProfile={() => handleStepNavigation('simulation')}
+            onNextStep={() => handleStepNavigation('profile')}
+          />
+        )}
       </main>
 
       {/* Footer */}

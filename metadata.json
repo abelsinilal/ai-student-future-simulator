@@ -1,0 +1,6 @@
+{
+  "name": "AI Student Future Simulator",
+  "description": "Interactive student profile and career future simulation platform with AI-ready architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

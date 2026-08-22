@@ -340,11 +340,11 @@ export const FutureSimulationPlaceholder: React.FC<FutureSimulationPlaceholderPr
           <div className="flex items-center gap-3 w-full sm:w-auto">
             <button
               type="button"
-              onClick={onBackToProfile}
+              onClick={onNextStep}
               className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-slate-900 text-white font-bold text-sm shadow-md hover:bg-slate-800 transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <Cpu className="w-4 h-4" />
-              <span>Modify Parameters</span>
+              <span>View Future Simulation</span>
             </button>
           </div>
         </div>

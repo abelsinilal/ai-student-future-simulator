@@ -23,11 +23,13 @@ import {
 interface FutureSimulationPlaceholderProps {
   profile: StudentProfile;
   onBackToProfile: () => void;
+  onNextStep?: () => void;
 }
 
 export const FutureSimulationPlaceholder: React.FC<FutureSimulationPlaceholderProps> = ({
   profile,
   onBackToProfile,
+  onNextStep,
 }) => {
   const [copied, setCopied] = useState(false);
   const [activeTab, setActiveTab] = useState<'overview' | 'skills' | 'roadmap'>('overview');

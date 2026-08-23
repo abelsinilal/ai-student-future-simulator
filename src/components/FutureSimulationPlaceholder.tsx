@@ -22,12 +22,14 @@ import {
 
 interface FutureSimulationPlaceholderProps {
   profile: StudentProfile;
+  isStep3?: boolean;
   onBackToProfile: () => void;
   onNextStep?: () => void;
 }
 
 export const FutureSimulationPlaceholder: React.FC<FutureSimulationPlaceholderProps> = ({
   profile,
+  isStep3,
   onBackToProfile,
   onNextStep,
 }) => {
@@ -80,7 +82,7 @@ export const FutureSimulationPlaceholder: React.FC<FutureSimulationPlaceholderPr
         </div>
 
         <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Future Simulation Preview
+          {isStep3 ? 'Unscripted Future Roadmap' : 'Future Simulation Preview'}
         </h2>
 
         <p className="text-slate-500 max-w-2xl mx-auto text-sm sm:text-base">

@@ -247,7 +247,7 @@ export const FutureSimulationPlaceholder: React.FC<FutureSimulationPlaceholderPr
             <span>{copied ? 'Copied JSON!' : 'Export Profile JSON'}</span>
           </button>
         </div>
-        )}
+        })
 
         {/* Tab 1: AI Future Trajectory Placeholder */}
         {activeTab === 'overview' && (

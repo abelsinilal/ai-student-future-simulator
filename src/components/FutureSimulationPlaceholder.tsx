@@ -92,6 +92,35 @@ export const FutureSimulationPlaceholder: React.FC<FutureSimulationPlaceholderPr
         </p>
       </div>
 
+      {isStep3 ? (
+          <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-2xl space-y-6 mb-8 border border-slate-800">
+            <div className="border-b border-slate-800 pb-4">
+              <h3 className="text-2xl font-bold text-indigo-400">Career Execution Roadmap</h3>
+              <p className="text-sm text-slate-400 mt-1">Target Role: Artificial Intelligence & Machine Learning Engineer</p>
+            </div>
+
+            <div className="space-y-4">
+              <div className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
+                <span className="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Phase 1: Next 3 Months</span>
+                <h4 className="font-semibold text-lg text-white mt-1">Core Fundamentals & Applied Projects</h4>
+                <p className="text-sm text-slate-300 mt-1">Build 2 flagship projects using Python, SQL, and core ML algorithms.</p>
+              </div>
+
+              <div className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
+                <span className="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Phase 2: Month 4 - Month 8</span>
+                <h4 className="font-semibold text-lg text-white mt-1">Advanced Specialization & Internships</h4>
+                <p className="text-sm text-slate-300 mt-1">Apply for practical internships and contribute to open-source AIML repos.</p>
+              </div>
+
+              <div className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700">
+                <span className="text-xs font-semibold text-purple-400 uppercase tracking-wider">Phase 3: Graduation Ready</span>
+                <h4 className="font-semibold text-lg text-white mt-1">Placement & Interview Prep</h4>
+                <p className="text-sm text-slate-300 mt-1">System design, mock technical interviews, and full portfolio deployment.</p>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-950 text-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden mb-8 border border-indigo-500/20">
       {/* Hero Simulation Status Card */}
       <div className="bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-950 text-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden mb-8 border border-indigo-800/40">
         {/* Background glow & grid */}
@@ -218,6 +247,7 @@ export const FutureSimulationPlaceholder: React.FC<FutureSimulationPlaceholderPr
             <span>{copied ? 'Copied JSON!' : 'Export Profile JSON'}</span>
           </button>
         </div>
+        )}
 
         {/* Tab 1: AI Future Trajectory Placeholder */}
         {activeTab === 'overview' && (

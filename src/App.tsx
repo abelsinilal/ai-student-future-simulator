@@ -122,10 +122,10 @@ export default function App() {
           />
         )}
         {currentStep === 'future' && (
-          <FutureSimulationPlaceholder
+          <UnscriptedFuture
             profile={profile}
-            onBackToProfile={() => handleStepNavigation('simulation')}
-            onNextStep={() => handleStepNavigation('profile')}
+            onBackToSimulation={() => handleStepNavigation('simulation')}
+            onReset={handleReset}
           />
         )}
       </main>

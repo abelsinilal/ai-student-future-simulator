@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { StudentProfileForm } from './components/StudentProfileForm';
 import { FutureSimulationPlaceholder } from './components/FutureSimulationPlaceholder';
+import { FutureRoadmap } from './components/FutureRoadmap';
 import { Footer } from './components/Footer';
 import { StudentProfile, INITIAL_PROFILE, Step } from './types/profile';
 
@@ -123,11 +124,12 @@ export default function App() {
           />
         )}
 
-        {/* Step 3: Future View */}
+        {/* Step 3: Future Roadmap */}
         {currentStep === 'future' && (
-          <FutureSimulationPlaceholder
+          <FutureRoadmap
             profile={profile}
             onBackToProfile={() => handleStepNavigation('simulation')}
+            onReset={handleReset}
           />
         )}
       </main>

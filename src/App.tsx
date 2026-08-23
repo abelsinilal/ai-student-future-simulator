@@ -114,7 +114,7 @@ export default function App() {
           />
         )}
 
-        {/* Step 2: Simulation */}
+       {/* Step 2: Simulation */}
           {currentStep === 'simulation' && (
             <FutureSimulationPlaceholder
               profile={profile}
@@ -123,10 +123,11 @@ export default function App() {
             />
           )}
 
-          {/* Step 3: Future View */}
+          {/* Step 3: Unscripted Future */}
           {currentStep === 'future' && (
             <FutureSimulationPlaceholder
               profile={profile}
+              isStep3={true}
               onBackToProfile={() => handleStepNavigation('simulation')}
             />
           )}
